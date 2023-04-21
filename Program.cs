@@ -17,3 +17,12 @@ string[] shortStringsArray = new string[shortStringsCount];
             index++;
         }
     }
+Console.WriteLine("\nМассив строк, длина которых меньше или равна 3 символам:");
+    for (int i = 0; i < shortStringsArray.Length; i++){
+        if (i < shortStringsArray.Length - 1){
+            Console.Write($"{shortStringsArray[i]}, ");
+        }
+        else{
+            Console.Write(shortStringsArray[i]);
+        }
+    }
