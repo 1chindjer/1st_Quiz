@@ -7,4 +7,13 @@ int shortStringsCount = 0;
             shortStringsCount++;
             }
     }
-// Создаем новый массив для строк длиной не больше 3
+// Создаем массив для строк длиной не больше 3
+string[] shortStringsArray = new string[shortStringsCount];
+// Заполняем новый массив
+    int index = 0;
+    for (int i = 0; i < inputArray.Length; i++){
+        if (inputArray[i].Length <= 3){
+            shortStringsArray[index] = inputArray[i];
+            index++;
+        }
+    }
